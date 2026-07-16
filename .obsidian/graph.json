@@ -1,0 +1,100 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#journal ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "tag:#django ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "tag:#vscode ",
+      "color": {
+        "a": 1,
+        "rgb": 31436
+      }
+    },
+    {
+      "query": "tag:#projects ",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "tag:#cyberark  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "tag:#concepts",
+      "color": {
+        "a": 1,
+        "rgb": 14427625
+      }
+    },
+    {
+      "query": "tag:#dashboard  ",
+      "color": {
+        "a": 1,
+        "rgb": 7829369
+      }
+    },
+    {
+      "query": "tag:#coding  ",
+      "color": {
+        "a": 1,
+        "rgb": 2784820
+      }
+    },
+    {
+      "query": "tag:#git-github  ",
+      "color": {
+        "a": 1,
+        "rgb": 16737792
+      }
+    },
+    {
+      "query": "tag:#cyberark-labs  ",
+      "color": {
+        "a": 1,
+        "rgb": 3023091
+      }
+    },
+    {
+      "query": "tag:#vscode-update  ",
+      "color": {
+        "a": 1,
+        "rgb": 7391487
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.6316046762907432,
+  "close": true
+}
