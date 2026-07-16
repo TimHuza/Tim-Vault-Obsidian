@@ -159,7 +159,101 @@ After reviewing the changes, the Changes panel provides the following options to
 When you create a new session, the **Files** panel includes a sync button that lets you pull in upstream changes from the base branch before the agent gets to work. This helps the agent start from the latest state of your branch and reduces the chance of merge conflicts when you bring its changes back.
 
 ## Validate agent changes locally
+In addition to reviewing changes in the Changes panel, you can also validate the edits made by the agent locally before committing or merging them. The Agents window supports running tasks and commands in the context of the current session. For example, you can run a build or tests to ensure that the changes made by the agent do not break your project, or start a development server to verify that the edits behave as expected in a running environment.
 
+To configure tasks in the Agents window:
+
+1. Start or open a session.
+
+2. Select the **Tasks** dropdown in the title bar and select **Add Task**.
+
+    ![Screenshot showing the Add Task dialog in the Agents window, where you can configure a task to run in the context of the current session.](https://code.visualstudio.com/assets/docs/agents/agents-window/agents-window-add-task.png)
+
+3. Provide the task details:
+
+    - **Name**: a descriptive name for the task.
+    - **Command**: the command to run when the task is executed (for example, `npm run build` or `pytest`).
+    - **Run Options**: automatically run the task when the session worktree is created.
+    - **Save In**: choose whether to save the task configuration in the workspace or your user profile for reuse across projects.
+
+4. Select **Add Task** to save the task configuration.
+
+Once the task is configured, it will appear in the **Tasks** dropdown, and you can run it in the context of the current session to validate the changes made by the agent.
+
+If your application involves browser-based behavior, you can use the integrated browser in the Agents window. Select a `localhost` link from the chat session to open it in the integrated browser inside the Agents window.
+
+Browser tabs are scoped to the session in which they were opened. Each session keeps its own set of browser tabs, isolated from other sessions, and those tabs persist across session switches, preserving the state of each page. When you switch sessions, you see the browser tabs that belong to the active session. If an agent opens a tab while its session isn't active, the tab isn't opened in the editor, but it remains usable and you can open it by selecting its label in the tool call in the chat session.
+
+![Screenshot showing the integrated browser open in the Agents window, displaying a localhost page that was opened from a link in the chat session.](https://code.visualstudio.com/assets/docs/agents/agents-window/agents-window-integrated-browser.png)
+
+Alternatively, you can also select a `localhost` link from the integrated terminal or open the integrated browser with the **Open Integrated Browser** command from the Command Palette (`Shift+cmd+P`). You can use the layout controls in the integrated browser to show it as a modal window or embedded in the Agents window layout alongside other views.
+
+If you want to run terminal commands in the context of the current session, select the **Open Terminal** icon in the title bar to open an integrated terminal with its current working directory set to the session's folder or worktree.
+
+## Work with agents remotely
+
+The Agents window lets you work with agents on remote machines and from any device with a browser.
+
+- **Browser-based access**: open [https://insiders.vscode.dev/agents](https://insiders.vscode.dev/agents) to manage agent sessions from any device, including mobile. The browser-based Agents window connects to your development machine through a dev tunnel and provides the full session management experience without installing Visual Studio Code locally.
+    
+- **SSH**: connect to a remote machine over SSH directly from the workspace dropdown. The Agents window automatically installs and starts the VS Code CLI on the remote machine.
+    
+- **Dev tunnels**: connect to a machine running a dev tunnel to start sessions or check in on existing ones.
+    
+
+Learn more about setting up and using remote connections in remote agent sessions.
+
+## Run multiple chats in a session
+In an agent host session, you can run multiple chats side by side, each as a separate tab in the chat area. Each chat has its own conversation, title, status, and agent or language model selection, but all chats share the session's workspace and worktree. Each new chat starts blank and doesn't carry over the conversation history of the other chats.
+
+This is useful when you want to work on an independent task in the same project without interrupting an ongoing chat or starting a new session.
+
+The first chat is the default chat for the session. The chats you add next to it are independent of each other, so you can rename, hide, or delete them without affecting the session itself.
+
+> [!Note]
+Running multiple chats is available for agent host sessions that support it, such as Copilot CLI and Claude sessions. Other session types show a single chat.
+
+To create an additional chat:
+
+1. In an active session, select **+ New Chat** in the session header, or press cmd+T.
+
+    A new chat opens with an empty input. When the session has more than one chat, a tab strip appears in the chat area. The chat doesn't appear as a separate item in the sessions list.
+
+    ![Screenshot showing how a new chat tab appears in the chat area alongside the existing chat tab in the Agents window.](https://code.visualstudio.com/assets/docs/agents/agents-window/agents-window-new-subsession.png)
+
+2. To add more chats, select the trailing **+** in the tab strip.
+
+3. Type a prompt and press Enter to start the chat.
+
+To work with the chats in a session:
+
+- **Switch between chats**: select a chat tab to show that chat's own conversation history. The in-progress spinner and unread indicator on a tab reflect the state of that chat only.
+- **Choose an agent or model**: use the agent and language model controls in a chat to pick different options for that chat. Sibling chats can use different agents or models.
+- **Track progress and changes**: the session status shows as in progress while any chat is working. Each chat tab shows its own progress. The session header **Changes** pill aggregates edits from all chats in the session, and opening it shows the combined changes.
+- **Rename a chat**: open a chat tab's context menu and select **Rename**, then enter a new name. The chat title is independent of the session title, so renaming the session doesn't rename the chats.
+- **Close or reopen a chat**: select the close (`x`) button on a chat tab to hide that chat without deleting it. Open the **Conversations** dropdown and use the chat's checkbox to show or hide it. To reopen the most recently closed chat, press `Shift+cmd+T`.
+- **Delete a chat**: open a chat tab's context menu and select **Delete Chat**, or press `cmd+Backspace` while the chat has focus. Deleting a chat permanently removes it and can't be undone. Use the tab close button when you want to hide the chat instead.
+
+Your visible and hidden chats are persisted and restored when you reload the window and reopen the session, including each chat's conversation history.
+
+> [!Tip]
+To explore an alternative direction from a specific point in a multi-chat agent host session, fork the conversation. The fork opens as a peer chat in the same session, inherits the conversation up to the fork point, gets an automatically generated title, and then runs independently from sibling chats. In single-chat sessions and sessions that don't use an agent host, forking creates a new independent session.
+
+### Follow subagents
+
+When an agent delegates work to subagents, each subagent appears as a read-only peer chat in the session, so you can follow its progress without steering it directly. Read-only chats show a lock icon and don't accept input.
+
+Subagent chats are hidden from the tab strip by default. To open a subagent chat, use one of the following methods:
+
+- Open the **Conversations** dropdown and select the subagent chat.
+- Select the running-subagents indicator that appears while subagents are active.
+- Select the **Open Subagent** link in the chat where the delegation happened.
+
+Subagent chats persist across window reloads, together with your other chats.
+
+![Screenshot showing the button to open a subagent's chat.](https://code.visualstudio.com/assets/docs/agents/agents-window/agents-window-follow-subagents-open-subagent.png)
+
+![Screenshot showing a read-only subagent chat.](https://code.visualstudio.com/assets/docs/agents/agents-window/agents-window-follow-subagents-read-only-chat.png)
 
 ## Open multiple sessions side by side
 
@@ -167,4 +261,99 @@ You can have more than one session open at the same time in the Agents window to
 
 - Right-click a session in the sessions list and select **Open to the Side**.
 - Drag and drop a session from the sessions list into the view area.
-- Hold Alt and select a session in the sessions list.
+- Hold `Alt` and select a session in the sessions list.
+
+Only one session view is _active_ at any time. The **Terminal**, **Files**, and **Changes** views always reflect the active session. By default, selecting a session in the sessions list replaces the active view. Pin a session view (top-right toolbar) to prevent it from being replaced.
+
+When you have multiple sessions open, you can use keyboard shortcuts to move between them and manage them, similar to working with editors:
+
+- Press cmd+1 through cmd+9 to focus a session by its position in the grid, from left to right.
+- Press `cmd+K cmd+W` to close all open sessions and return to the new-session view. This shortcut applies when a session has focus.
+
+These commands are also available in the Command Palette (`Shift+cmd+P`).
+
+> [!Note]
+**Experimental**: when you enable `sessions.layout.autoCollapseSessionsSidebar`, the Agents window hides the sessions sidebar on narrow windows when both the editor area and side panel are open. The sidebar appears again when there is room. The Agents window preserves a sidebar that you closed manually, and suspends auto-collapse while multiple sessions are open side by side.
+
+## Customize agents for your project and workflow
+
+The **Customizations** panel gives you direct access to all AI customization options:
+
+Expand table
+
+| Customization    | What it does                                                       |
+| ---------------- | ------------------------------------------------------------------ |
+| **Agents**       | Define custom agent personas with specific tools and instructions. |
+| **Skills**       | Add portable instruction folders that agents load when relevant.   |
+| **Instructions** | Set guidelines that shape how the AI generates code.               |
+| **Hooks**        | Run shell commands at lifecycle points during agent sessions.      |
+| **MCP Servers**  | Connect AI to external tools and services via the MCP standard.    |
+| **Plugins**      | Install prepackaged bundles of customizations.                     |
+
+The Agent Customizations panel enables you to easily manage all your customizations in one place:
+
+- View and edit existing customizations for the project (workspace), or across all your projects (user).
+- Add new customizations by using the built-in editor or by generating them from a prompt.
+- Install plugins or MCP servers from the marketplace.
+- Enable or disable customizations without removing them.
+
+Use the dropdown in the top left of the Agent Customizations panel to choose which agent the customizations should apply to.
+
+![Screenshot showing the Agent Customizations panel in the Agents window, with the list of available customizations visible.](https://code.visualstudio.com/assets/docs/agents/agents-window/agents-window-customizations.png)
+
+## Trust a folder
+
+When you first open a new folder or repository in the Agents window, you're prompted to trust the folder and its subfolders. Folder trust is a security measure that prevents agents from running in untrusted folders, which could result in malicious code being executed on your machine.
+
+If you choose not to trust the folder, you can't start or continue agent sessions for that folder in the Agents window.
+
+![Screenshot of the folder trust prompt in the Agents window, asking the user to trust the folder before starting an agent session.](https://code.visualstudio.com/assets/docs/agents/agents-window/agents-window-folder-trust.png)
+
+The Agents window shares the same workspace trust state with the main VS Code window. If you trust a folder in VS Code, it is also trusted in the Agents window, and vice versa. Learn more about workspace trust in the Workspace Trust documentation.
+
+## Switch to another GitHub account
+To use a different GitHub account in the Agents window, select the account icon in the top right corner of the window and choose **Sign out**. After signing out, select **Sign in** to authenticate with a different GitHub account.
+
+## Configure settings for the Agents window
+
+The Agents window shares all of your VS Code settings, so the configuration you've already invested in carries over automatically. When you want different behavior in the Agents window than in the editor window, you can override specific settings just for the Agents window without affecting your main VS Code setup.
+
+To override a setting for the Agents window only, edit your settings file and scope the value under the Agents window section. Open the Settings editor (`cmd+,`) from the Agents window to see which scope a setting applies to.
+
+## Use VS Code extensions in the Agents window
+
+The Agents window can run your VS Code extensions, so you can bring the tools you rely on into your agent-first workflow.
+
+Extensions that contribute only static content, such as themes, grammars, languages, and keybindings, activate in the Agents window automatically. We also tested the top 100 Marketplace extensions, and some of those activate as well when installed in your default VS Code profile.
+
+For other extensions, you can opt them in by ID with the `extensions.supportAgentsWindow` setting:
+
+JSON
+
+```JSON
+"extensions.supportAgentsWindow": {
+    "myextension.id": true
+}
+```
+
+Keep the following in mind when enabling extensions:
+
+- Any extension you enable this way must be installed in your default VS Code profile.
+- Extension support is still evolving. If an extension doesn't behave as expected in the Agents window, please file an issue so we can discuss.
+
+If you're an extension author, we'd love to collaborate on what extension enablement in the Agents window unlocks. Whether you'd like to ideate on new scenarios that take advantage of running agents across projects, or share feedback on how your existing extension behaves in the Agents window, share feedback and ideas via GitHub issues.
+
+## Limitations
+
+- The agent can't directly open the integrated browser for you for now. You can start the integrated browser from the Command Palette (**Browser: Open Integrated Browser**) or by selecting a `localhost` link in the Agents window.
+
+- The Agents window currently only supports the following agent types: Copilot CLI, Copilot Cloud, and Claude agent. To use local or other third-party agents, manage your sessions from the main VS Code window.
+
+- Copilot Cloud sessions are only supported for GitHub-backed repositories. For non-GitHub projects, you can still use Copilot CLI in the Agents window.
+
+- The agents dropdown currently doesn't have the plan agent. You can still use the `/plan` command in a Copilot CLI or Claude agent session. In Copilot CLI sessions, the plan agent is also automatically invoked when you refer ask for creating a plan in your prompt.
+
+- Running multiple chats in a single session is currently supported for Copilot CLI and Claude sessions.
+
+- Multi-root sessions are not yet supported in the Agents window. You can ask the agent to work across projects in a single session.
+
