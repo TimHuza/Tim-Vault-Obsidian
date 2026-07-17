@@ -1,0 +1,54 @@
+July 17, 2026
+
+#cyberark-labs 
+
+
+In this section of your lab, you are moving from just "looking around" the fortress to actually **securing the master keys** for the Windows part of the company.
+
+Think of a **Windows Domain Account** like a special school ID card that doesn't just open one classroom door, but can open _every_ door in the entire school building. Because these keys are so powerful, they need extra special care.
+
+Here is everything you are doing in this section, explained simply:
+
+### 1. Key Terms to Know
+
+- **Domain Account:** A "skeleton key" that works on many different computers across the whole company network.
+- **Platform:** This is like a **"Cheat Sheet"** or a set of instructions. It tells CyberArk’s robot (the CPM) exactly how to talk to a specific type of computer to change its password.
+- **Reconciliation Account (`s-reconcile`):** Think of this as the **"Fixer Key."** If a computer's password gets messed up or forgotten, CyberArk uses this special key to break in and reset it to a new one.
+- **Discovery Account (`cpm-scan`):** This is the **"Scout."** Its only job is to wander around the network looking for new computers or accounts that aren't protected yet so you can bring them into the Vault.
+- **Master Policy:** The **"Main Rulebook"** for the whole company. It sets big rules, like "Everyone must change their password every 40 days".
+
+---
+
+### 2. What You are Actually Doing (Step-by-Step)
+
+#### **Task A: Teaching CyberArk a New Trick (Importing a Platform)**
+
+CyberArk starts with some basic knowledge, but you need to give it a specific "cheat sheet" for Windows Domain accounts. You go into the settings and **import a file** (a `.zip` file) that teaches CyberArk exactly how to handle these domain keys.
+
+#### **Task B: Speeding Up the Robot (Editing Platform Settings)**
+
+Normally, the password robot (CPM) might only check for work once a day. Because you are in a lab and don't want to wait 24 hours to see if your work succeeded, you change a setting called `ImmediateInterval` to **1 minute**. This makes the robot check for new tasks almost instantly.
+
+#### **Task C: Making Special Rules (Editing the Master Policy)**
+
+You go into the "Main Rulebook" (Master Policy) and set a rule that everyone has to change their passwords every 40 days. However, you decide that your new Windows Domain keys are even more sensitive, so you **add an exception**. This exception says, "For these specific keys, ignore the 40-day rule and change them every 15 days instead".
+
+#### **Task D: Putting the "Fixer" Key in the Vault**
+
+You log in as **Mike** (the boss admin) and add the `s-reconcile` account to a folder called the **`CyberArk-Service-Accounts` Safe**. You have to tell CyberArk:
+
+1. **What it is:** A Windows account.
+2. **Which "Cheat Sheet" to use:** The one you imported earlier.
+3. **Where it lives:** The address of the company network (`acme.corp`).
+
+#### **Task E: Putting the "Scout" Key in the Vault**
+
+Finally, you do the exact same thing for the `cpm-scan` account. Once this key is inside the Vault, CyberArk can use it to go out and "scout" the network to find other accounts that need to be protected.
+
+### Why are we doing this?
+
+In the "real world," if a hacker steals a Domain Account key, they can control the whole company. By putting these keys (the **Fixer** and the **Scout**) into CyberArk, you ensure that:
+
+- The passwords are **long and confusing**.
+- The passwords **change automatically** so they are never stale.
+- **Only the robot** knows the password, not even the humans!
