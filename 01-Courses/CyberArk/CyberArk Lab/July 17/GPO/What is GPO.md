@@ -198,7 +198,6 @@ It needs to be attached to:
 - OU
     
 - Site
-    
 
 Example:
 

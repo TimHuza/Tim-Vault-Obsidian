@@ -1,7 +1,7 @@
 #concepts 
 
 
-![Image|451](https://images.openai.com/static-rsc-4/f1BpcCHAVuVkzA5H_TT-HFldEWIV1CVpjj72p9cX4xDy3-ZAzu6Cyrd08kgmfyJOmxPaIiMSNsdpIfqHq-5V-MdlEyi35e_61CMAmN9UW8VbqU1kvAmI04eUJ8zAAX0q3BURO_FN4zNSzHhIKjpmtK_68tSjK1QJfVa1R0xSQ2O6bI1BPBVijZK2h4f_hmth?purpose=fullsize)
+![Image|697](https://images.openai.com/static-rsc-4/f1BpcCHAVuVkzA5H_TT-HFldEWIV1CVpjj72p9cX4xDy3-ZAzu6Cyrd08kgmfyJOmxPaIiMSNsdpIfqHq-5V-MdlEyi35e_61CMAmN9UW8VbqU1kvAmI04eUJ8zAAX0q3BURO_FN4zNSzHhIKjpmtK_68tSjK1QJfVa1R0xSQ2O6bI1BPBVijZK2h4f_hmth?purpose=fullsize)
 # What is Active Directory (AD)?
 
 Imagine you have a **huge school**.
