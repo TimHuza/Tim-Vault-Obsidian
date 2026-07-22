@@ -2,7 +2,7 @@
 
 
 ### 1. **CyberArk LAB**
-I started a day with a CyberArk lab with Batya. And we completed a [[User Managements 41-58]] section there. I reviewed the [[Introduction To CyberArk PAM 13-40]] and what we did today [[User Managements 41-58]].
+I started a day with a CyberArk lab with Batya. And we completed a [[2. User Managements 41-58]] section there. I reviewed the [[1. Introduction To CyberArk PAM 13-40]] and what we did today [[2. User Managements 41-58]].
 
 I also learned some variables in `dbparm.ini` [[dbparm.ini File Explained|file]] 
 

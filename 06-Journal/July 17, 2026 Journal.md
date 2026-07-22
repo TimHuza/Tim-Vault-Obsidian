@@ -2,7 +2,7 @@
 
 
 ### 1. **CyberArk**
-Today I did a lab with batya. [[Securing Windows Domain Accounts 59-72]]
+Today I did a lab with batya. [[3. Securing Windows Domain Accounts 59-72]]
 And I studied topics:
 - [[What is GPO]]
 - [[How GPO + CyberArk works]]
