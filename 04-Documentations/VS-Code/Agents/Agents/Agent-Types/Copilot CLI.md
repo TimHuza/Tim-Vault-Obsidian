@@ -171,7 +171,7 @@ To view all repositories in your workspace, enable the scm.repositories.explore
 
 ## Use custom agents with Copilot CLI
 
-[[Custoom Agents|Custom agents]] let you define custom personas and roles for agents in VS Code. For example, you might create a custom agent for performing code reviews. Custom agents can define specific instructions and behaviors.
+[[Custom Agents|Custom agents]] let you define custom personas and roles for agents in VS Code. For example, you might create a custom agent for performing code reviews. Custom agents can define specific instructions and behaviors.
 
 When you create a Copilot CLI session, you can select a custom agent to handle the task. The custom agent operates according to the defined behavior.
 
