@@ -1,6 +1,6 @@
 #cyberark-labs 
 
-
+![[vault-ini-file-params.png]]
 ### **1. VS Code**
 Today on vs code documentation I completed the [[Third-Party Agents]] section in Agent Types in agents section
 
