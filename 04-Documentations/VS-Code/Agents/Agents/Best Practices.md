@@ -30,8 +30,6 @@ For full setup details, see Customize agent behavior in VS Codr.
 
 AI in VS Code offers several interaction modes. Choosing the right one for the task at hand saves time and produces better results.
 
-Expand table
-
 | Tool                                                                 | Best for                                                         | Example                                                     |
 | -------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------- |
 | Inline suggestions                                                   | Staying in the flow while writing code                           | Inline suggestions, variable names, boilerplate             |
