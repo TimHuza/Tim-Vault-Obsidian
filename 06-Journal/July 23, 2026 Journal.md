@@ -1,4 +1,4 @@
-#cyberark-labs 
+#journal 
 
 ![[vault-ini-file-params.png]]
 ### **1. VS Code**

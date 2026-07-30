@@ -83,6 +83,13 @@
         "a": 1,
         "rgb": 7391487
       }
+    },
+    {
+      "query": "tag:#tutorial  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
     }
   ],
   "collapse-display": true,
@@ -95,6 +102,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.4505081176757781,
-  "close": true
+  "scale": 0.45050811767577564,
+  "close": false
 }

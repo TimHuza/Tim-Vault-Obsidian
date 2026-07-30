@@ -1,5 +1,6 @@
 #django
 
+
 Absolutely! **Migrations** are one of the most important concepts in Django, and they're confusing at first because they happen "behind the scenes."
 
 Let's build up the idea step by step.

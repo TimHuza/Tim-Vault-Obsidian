@@ -42,7 +42,7 @@ And I studied topics:
 
 
 ### 2. **VS-Code Documentation**
-Today on VS Code documentation I practiced the [[Chat View]]. By asking the chat:
+Today on VS Code documentation I practiced the [[04-Documentations/VS-Code/Agents/Agents/Chat View]]. By asking the chat:
 - `What was my last commit message?`
 - `Create an app ....`
 All changes are in my [GitHub repo](https://github.com/TimHuza/VS-Code-Documentation)
