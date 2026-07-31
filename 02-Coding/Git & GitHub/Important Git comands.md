@@ -655,27 +655,27 @@ Then you would open a **Pull Request (PR)** on GitHub, where teammates review yo
 
 These are the commands you'll use constantly:
 
-|Command|Purpose|Frequency|
-|---|---|--:|
-|`git status`|Check repository state|⭐⭐⭐⭐⭐|
-|`git add`|Stage changes|⭐⭐⭐⭐⭐|
-|`git commit`|Save changes|⭐⭐⭐⭐⭐|
-|`git push`|Upload changes|⭐⭐⭐⭐⭐|
-|`git pull`|Get latest changes|⭐⭐⭐⭐⭐|
-|`git clone`|Download a repository|⭐⭐⭐⭐⭐|
-|`git branch`|Manage branches|⭐⭐⭐⭐|
-|`git switch`|Change branches|⭐⭐⭐⭐|
-|`git merge`|Combine branches|⭐⭐⭐⭐|
-|`git diff`|Review changes|⭐⭐⭐⭐|
-|`git log --oneline`|View history|⭐⭐⭐|
-|`git fetch`|Retrieve updates|⭐⭐⭐|
-|`git stash`|Save work temporarily|⭐⭐⭐|
-|`git restore`|Undo file changes|⭐⭐⭐|
-|`git reset`|Undo commits or unstage changes|⭐⭐|
-|`git rebase`|Rewrite branch history|⭐⭐|
-|`git tag`|Mark releases|⭐⭐|
-|`git reflog`|Recover lost commits|⭐|
-|`git cherry-pick`|Copy a commit|⭐|
-|`git bisect`|Find a bug-causing commit|⭐|
+| Command             | Purpose                         | Frequency |
+| ------------------- | ------------------------------- | --------: |
+| `git status`        | Check repository state          |     ⭐⭐⭐⭐⭐ |
+| `git add`           | Stage changes                   |     ⭐⭐⭐⭐⭐ |
+| `git commit`        | Save changes                    |     ⭐⭐⭐⭐⭐ |
+| `git push`          | Upload changes                  |     ⭐⭐⭐⭐⭐ |
+| `git pull`          | Get latest changes              |     ⭐⭐⭐⭐⭐ |
+| `git clone`         | Download a repository           |     ⭐⭐⭐⭐⭐ |
+| `git branch`        | Manage branches                 |      ⭐⭐⭐⭐ |
+| `git switch`        | Change branches                 |      ⭐⭐⭐⭐ |
+| `git merge`         | Combine branches                |      ⭐⭐⭐⭐ |
+| `git diff`          | Review changes                  |      ⭐⭐⭐⭐ |
+| `git log --oneline` | View history                    |       ⭐⭐⭐ |
+| `git fetch`         | Retrieve updates                |       ⭐⭐⭐ |
+| `git stash`         | Save work temporarily           |       ⭐⭐⭐ |
+| `git restore`       | Undo file changes               |       ⭐⭐⭐ |
+| `git reset`         | Undo commits or unstage changes |        ⭐⭐ |
+| `git rebase`        | Rewrite branch history          |        ⭐⭐ |
+| `git tag`           | Mark releases                   |        ⭐⭐ |
+| `git reflog`        | Recover lost commits            |         ⭐ |
+| `git cherry-pick`   | Copy a commit                   |         ⭐ |
+| `git bisect`        | Find a bug-causing commit       |         ⭐ |
 
 If you become comfortable with the first **10–15 commands**, you'll already be able to handle the vast majority of day-to-day Git tasks in a DevOps role. The remaining commands are powerful tools you'll learn as you encounter more advanced workflows.
