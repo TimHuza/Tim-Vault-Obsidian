@@ -8,6 +8,8 @@ Today I was making my own Django teacher agent that I will to use to learn Djang
 - Test and debug the code
 [[0.1v. Planning The Project]]
 
+I discussed what is [[Thinking Effort]] and [[AI model pricing or usage units]]
+
 I also bought and [[GitHub Copilot Pro]] $10 subscription.
 
 Here is the [repository](https://github.com/TimHuza/django-teacher-agent) of it.
