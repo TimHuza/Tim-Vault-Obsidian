@@ -1,6 +1,9 @@
 #journal 
 
 
+### **1. [[Smart File Organizer Agent]]**
+Today I was closed my two issues that I created yesterday and was trying to run and test the agent. Overall, the agent is not yet ready. There is a [repo](https://github.com/TimHuza/File-Organizer-Agent) to this agent
+
 
 ### **2. Cyber Security**
 Today I did a 10. The DNS System video in Network Essentials section for course.
@@ -37,3 +40,15 @@ When you type a website into your browser:
 
 I also did a quiz on 7/10.
 ![[the-dns-system-quiz.png]]
+
+
+### **3 Django**
+Today I was doing code following the course instructor
+
+### **3.1. Django Teacher Agent**
+Today I made a runbook feature to my django teacher agent and a [v1.1.0 Runbook Release](https://github.com/TimHuza/django-teacher-agent)
+
+This release adds runbook saving support to the Django Teacher Agent. The agent now records final user-facing responses as Markdown runbook files before sending them in chat, which improves traceability, reviewability, and project documentation.
+
+I have an idea for a new feature:
+🚀 Django Teacher Agent will automatically push your runbook responses directly into your Obsidian vault. No more manual copy-pasting — your explanations, debugging notes, and learning records are saved instantly.
