@@ -45,7 +45,7 @@ I also did a quiz on 7/10.
 ### **3 Django**
 Today I was doing code following the course instructor
 
-### **3.1. Django Teacher Agent**
+### 4. Django Teacher Agent**
 Today I made a runbook feature to my django teacher agent and a [v1.1.0 Runbook Release](https://github.com/TimHuza/django-teacher-agent)
 
 This release adds runbook saving support to the Django Teacher Agent. The agent now records final user-facing responses as Markdown runbook files before sending them in chat, which improves traceability, reviewability, and project documentation.
