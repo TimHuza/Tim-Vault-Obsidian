@@ -147,8 +147,8 @@ DNS translates:
 
 ```
 google.com
-        |
-        v
+    |
+	v
 142.250.72.14
 ```
 
