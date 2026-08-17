@@ -30,7 +30,7 @@ AI features are built into VS Code. To enable them, sign in with your GitHub acc
 4. Enter a prompt describing what you want to do, such as "Add a dark mode toggle to the header and make sure it works on mobile".
 
 > [!TIP]
-> You can also bring your own API key to use models from any provider without a Copilot subscription. Learn more about [[04-Documentations/VS-Code/Agents/Agent Customization/Language Models|language models]].
+> You can also bring your own API key to use models from any provider without a Copilot subscription. Learn more about [[04-Documentations/VS-Code/Agents/Customize Agents/Language Models|language models]].
 ## Choose how you work with agents
 
 VS Code gives you two main surfaces for working with agents: the **Agents window** and the **Chat view**. Pick the one that fits your current task and switch freely between them. Both share the same agent sessions, letting you start a session in one and continue it in the other without losing context.
@@ -45,7 +45,7 @@ The [[Agents Window|Agents window]] (Preview) is a dedicated window focused on
 
 ### Chat view
 
-The [[04-Documentations/VS-Code/Agents/Agents/Chat View]] is a chat panel in the sidebar, next to your workspace editor tabs. It's scoped to the workspace you have open in VS Code, so you can give the agent coding tasks, review the code it produces, and keep an agent focused on the code you're actively working on. The Chat view is optimized for **code-first workflows**.
+The [[04-Documentations/VS-Code/Run Agent/Chat View]] is a chat panel in the sidebar, next to your workspace editor tabs. It's scoped to the workspace you have open in VS Code, so you can give the agent coding tasks, review the code it produces, and keep an agent focused on the code you're actively working on. The Chat view is optimized for **code-first workflows**.
 
 ![[chat-view.png]]
 
@@ -59,7 +59,7 @@ Each agent session has a few settings that control how it runs. Choose them when
 | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Agent type**                                                  | Where the agent runs and how you interact with it: interactively in VS Code with local agents, in the background on your machine with Copilot CLI, remotely on GitHub's infrastructure with cloud agents, or through a third-party provider like Anthropic or OpenAI.<br>You can hand off an in-progress session to a different agent type, for example to pass a local Plan session to Copilot CLI or a cloud agent. |
 | [[Local Agents#Agent\|Agent]]                                   | The persona that shapes how the agent approaches a task and which tools it can use. Pick a built-in agent (Agent, Plan, Ask) or use a custom agent for a specialized role like a security expert or documentation writer.                                                                                                                                                                                             |
-| [[04-Documentations/VS-Code/Agents/Agent Customization/Language Models\|Language model]]                             | The model that powers the agent's reasoning. Pick a fast model for quick edits and questions, or a stronger reasoning model for complex, multi-step or research work.                                                                                                                                                                                                                                                 |
+| [[04-Documentations/VS-Code/Agents/Customize Agents/Language Models\|Language model]]                             | The model that powers the agent's reasoning. Pick a fast model for quick edits and questions, or a stronger reasoning model for complex, multi-step or research work.                                                                                                                                                                                                                                                 |
 | [[Approvals & Permissions#Permission levels\|Permission level]] | How much autonomy the agent has to run tools and terminal commands, from approving every action to letting it work on its own.                                                                                                                                                                                                                                                                                        |
 ## Tailor agents to your codebase
 
