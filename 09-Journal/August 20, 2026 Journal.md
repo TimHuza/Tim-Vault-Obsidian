@@ -105,5 +105,5 @@ Today I did 50. Access Control Models lesson in Identity & Access Management sec
 | **ABAC** | **Attributes** decide | Multiple specific conditions     | Highly complex to set up                 |
 
 I also did quiz on 8/10
-![[Pasted image 20260820140212.png]]
+![[access-control-models-quiz.png]]
 
