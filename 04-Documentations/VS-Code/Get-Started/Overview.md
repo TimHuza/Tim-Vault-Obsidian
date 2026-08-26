@@ -17,7 +17,7 @@ Follow a hands-on tutorial to build your first app with AI in VS Code.
 
 VS Code adapts to how you want to work, whether you write every line yourself or hand off tasks to an AI agent. Most workflows combine both.
 
-* **Build with AI agents.** Describe what you want in natural language, and an agent plans a solution, edits files across your project, runs commands, and fixes its own errors. Run agents in the [[Agents Window|Agents window]] for an agent-first workflow, or in the [[04-Documentations/VS-Code/Run Agent/Chat View|Chat view]] while you write code in the editor. Learn more about AI Agents in VS Code.
+* **Build with AI agents.** Describe what you want in natural language, and an agent plans a solution, edits files across your project, runs commands, and fixes its own errors. Run agents in the [[Agents Window|Agents window]] for an agent-first workflow, or in the [[04-Documentations/VS-Code/Agents/Run Agent/Chat View|Chat view]] while you write code in the editor. Learn more about AI Agents in VS Code.
 
 ![[welcome.png]]
 

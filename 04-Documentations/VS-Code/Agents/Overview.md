@@ -45,7 +45,7 @@ The [[Agents Window|Agents window]] (Preview) is a dedicated window focused on
 
 ### Chat view
 
-The [[04-Documentations/VS-Code/Run Agent/Chat View]] is a chat panel in the sidebar, next to your workspace editor tabs. It's scoped to the workspace you have open in VS Code, so you can give the agent coding tasks, review the code it produces, and keep an agent focused on the code you're actively working on. The Chat view is optimized for **code-first workflows**.
+The [[04-Documentations/VS-Code/Agents/Run Agent/Chat View]] is a chat panel in the sidebar, next to your workspace editor tabs. It's scoped to the workspace you have open in VS Code, so you can give the agent coding tasks, review the code it produces, and keep an agent focused on the code you're actively working on. The Chat view is optimized for **code-first workflows**.
 
 ![[chat-view.png]]
 

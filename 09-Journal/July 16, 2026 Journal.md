@@ -3,7 +3,7 @@
 ### 1. **VS-Code Documentation**
 Today on VS Code documentation I finished:
 - [[Agents Window]]
-- [[04-Documentations/VS-Code/Run Agent/Chat View]]
+- [[04-Documentations/VS-Code/Agents/Run Agent/Chat View]]
 
 > The Chat view is where you work with agents in Visual Studio Code while staying focused on the code in your current project.
 > ![Screenshot showing an agent session in the Chat view alongside the editor in VS Code.](https://code.visualstudio.com/assets/docs/agents/agents-overview/chat-sessions-view.png)

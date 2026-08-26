@@ -5,10 +5,10 @@ The Agents window is a dedicated window in VS Code, built for an agent-first wor
 
 The Agents window gives you access to all your workspaces from one place and lets you run and track multiple sessions in parallel across your projects without opening each workspace in a separate window. It shares the same agent sessions, settings, and keybindings with the main VS Code window, so you can move freely between an editor-focused workflow and an agent-focused workflow at any time without losing context.
 
-In this article, you learn about the Agents window and how to start and manage agent sessions across your projects. For chat mechanics that apply to both the Agents window and the [[04-Documentations/VS-Code/Run Agent/Chat View|Chat view]] — such as sending requests, adding context, and reviewing changes — see Use chat in VS Code.
+In this article, you learn about the Agents window and how to start and manage agent sessions across your projects. For chat mechanics that apply to both the Agents window and the [[04-Documentations/VS-Code/Agents/Run Agent/Chat View|Chat view]] — such as sending requests, adding context, and reviewing changes — see Use chat in VS Code.
 
 > [!Tip]
-> The Agents window (agent-first) and the [[04-Documentations/VS-Code/Run Agent/Chat View|Chat view]] (code-first) are the main surfaces for working with agents. They share the same sessions and settings, so you can move freely between them. For help choosing, see [[04-Documentations/VS-Code/Agents/Overview#Choose how you work with agents|Choose how you work with agents]].
+> The Agents window (agent-first) and the [[04-Documentations/VS-Code/Agents/Run Agent/Chat View|Chat view]] (code-first) are the main surfaces for working with agents. They share the same sessions and settings, so you can move freely between them. For help choosing, see [[04-Documentations/VS-Code/Agents/Overview#Choose how you work with agents|Choose how you work with agents]].
 
 > [!Note]
 > The Agents window is currently in preview. We're actively shaping it based on your feedback and are excited to learn alongside developers. Please share your experience by filing issues on GitHub, or browse existing issues.

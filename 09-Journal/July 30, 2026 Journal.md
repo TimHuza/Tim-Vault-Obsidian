@@ -30,7 +30,7 @@ Today I did [[Best Practices]] section in Agents section
 ### **2. CyberArk**
 Today I did flashcards on Backup and Restore, quiz on Backup and Restore on 8/10, and generated a video for Backup and Restore topic that really helped me for doing this quiz.
 
-![[backup-and-restore-quiz.png]]
+![[09-Journal/Attachements/July 30/backup-and-restore-quiz.png]]
 
 
 
