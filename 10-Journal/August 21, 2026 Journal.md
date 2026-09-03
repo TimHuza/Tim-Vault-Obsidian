@@ -5,7 +5,7 @@
 Today I viewed a video on **Backup and Restore**
 
 I also did a **quiz** first time on 5/10 then 9/10
-![[09-Journal/Attachements/August 21/backup-and-restore-quiz.png]]
+![[10-Journal/Attachements/August 21/backup-and-restore-quiz.png]]
 
 ---
 ### **2. Cyber Security**

@@ -6,6 +6,8 @@ Today I was doing the presentation about security for Saturday
 
 I did an `html` presentation for it and a transcript of what to say for this presentation.
 
+[[August 12, 2026 VS Code Update]]
+
 ### **. Cyber Security**
 Today I did 30. SIM Swap Attacks lesson in Cyber Attacks section.
 #### 1. What is a SIM Swap Attack?
