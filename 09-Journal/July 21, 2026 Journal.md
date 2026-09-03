@@ -22,7 +22,7 @@ I also learned [[What is Copilot SDK]]
 
 ### **3. Cyber Security**
 On Cyber Security I reviewed previous materials, organized my files in NotebookLM, and completed a 44. Demo - How Generative AI Makes Phishing More Convincing quiz on 8/10 80%.
-![[cyber-security-quiz.png]]
+![[09-Journal/Attachements/July 21/cyber-security-quiz.png]]
 
 
 ### **4. Django**
