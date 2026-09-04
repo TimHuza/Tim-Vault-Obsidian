@@ -67,7 +67,7 @@
       "query": "tag:#git-github  ",
       "color": {
         "a": 1,
-        "rgb": 16737792
+        "rgb": 16724736
       }
     },
     {
@@ -97,6 +97,13 @@
         "a": 1,
         "rgb": 7945666
       }
+    },
+    {
+      "query": "tag:#ai-agents-community  ",
+      "color": {
+        "a": 1,
+        "rgb": 16734464
+      }
     }
   ],
   "collapse-display": true,
@@ -109,6 +116,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.08317427835927528,
-  "close": false
+  "scale": 0.22920135941749203,
+  "close": true
 }

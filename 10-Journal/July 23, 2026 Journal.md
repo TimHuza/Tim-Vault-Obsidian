@@ -17,6 +17,11 @@ Today on CyberArk lab I did:
 - [[8. What is Discovery (P. 158)]]
 - [[9. What is onboard (P. 163)]]
 
+[[P. 171 - 192 Parameters]]
+[[P. 171 - 192 My Questions]]
+[[P. 171 - 192 AI Mode questions]]
+[[Questions]]
+
 > **Dual Approval means one person requests access to a privileged account, and another person must approve that request before access is granted.**
 
 > An **Approval Request** is a request created by a user asking for permission to access a protected account or perform a privileged action.
@@ -36,6 +41,7 @@ Today on CyberArk lab I did:
 > **Onboarding** means:
 > **Adding a privileged account into CyberArk so CyberArk can start protecting, managing, and controlling it.**
 
+[[July 23 Summary]]
 
 ### **3. Cyber Security**
 Today I completed a MDM quiz on 88%

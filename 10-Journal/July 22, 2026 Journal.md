@@ -15,6 +15,8 @@ Today I did topics from July 21
 ### **2. VS Code**
 Today I did [[Cloud Agents]] section and was just reading a documentation.
 
+[[July 22, 2026 VS Code Update]]
+
 
 ### **3. CyberArk**
 I completed a Mobile Device Management section
